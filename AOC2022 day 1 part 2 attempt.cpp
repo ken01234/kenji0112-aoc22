@@ -21,7 +21,7 @@ int main(){
       }
     sort(data.begin(),data.end());
   cout << *max_element(data.begin(),data.end()) <<endl << data[data.size()-1] << endl << data[data.size()-2] << endl;
-  int answer = *max_element(data.begin(),data.end()) + data[data.size()-2] + data[data.size()-3];
+  int answer = *max_element(data.begin(),data.end()) + data[data.size()-2] + data[data.size()-3]; // This part only shows the top 3 largest number of calories from the data
    cout << answer;
   
 }
