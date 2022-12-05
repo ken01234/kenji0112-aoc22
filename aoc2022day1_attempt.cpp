@@ -1,22 +1,22 @@
 #include <iostream>
 #include <fstream>
-#include <vector>
 #include <bits/stdc++.h>
-
 using namespace std;
 
 int main(){
     string myText;
-    int calories;
+    int sum = 0;
     ifstream MyReadFile("input.txt");
-    int data[3000]=[];
+    vector<int> data={};
     long long i = 0;
     while (getline (MyReadFile, myText)){
-        calories = stoi(myText);
-        data[i]= calories;
-        cout << data[i];
-        i++;
-    }
-    // cout << *max_element(data.begin(),data.end());
-    // return 0;
+          if (myText.empty()){
+        data.push_back(sum);
+        sum =0;
+        continue;
+            }
+      long long calories = stoi(myText);
+      sum = sum + calories;
+      }
+  cout << *max_element(data.begin(),data.end());
 }
