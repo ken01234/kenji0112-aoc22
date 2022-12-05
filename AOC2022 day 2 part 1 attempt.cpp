@@ -1,3 +1,5 @@
+//I am aware that this is very ugly and Ill think of a cleaner method if I can think of any. Also its still a work in progress.
+
 #include <fstream>
 #include <iostream>
 #include <vector>
