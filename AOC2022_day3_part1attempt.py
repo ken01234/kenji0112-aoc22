@@ -1,3 +1,6 @@
+#For this question, I did it in python since I remembered a similar question to this in python.
+#For the allocation of value to the letter, I don't know an easier way to do it
+#It works but the answer I got was too low. It is still a work in progress
 f1 = open("aocday3input.txt", "r")
 mistake=[]
 sum=0
