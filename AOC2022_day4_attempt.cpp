@@ -1,3 +1,5 @@
+//This is my attempt in the question, I get values but so far I haven't been able to get the correct answer.
+
 #include <iostream>
 #include <sstream>
 #include <string>
@@ -38,11 +40,11 @@ int main() {
     int start1 = stoi(range1[0]);
     int end1 = stoi(range1[1]);
     int start2 = stoi(range2[0]);
-    int end2 = stoi(range2[1]);
+    int end2 = stoi(range2[1]);// Up to this point, the ranges are turned from strings into integers
 
 
     if ((end2 > end1 && start2 > start1)||(end1 > end2 && start1 < start2)||(end2 == end1 && start2 > start1)||(end2 > end1 && start2 == start1)||(end1 ==end2 && start1 < start2)||(end1 > end2 && start1 == start2)){
-      count++;
+      count++;// This checks to see the different cases where a section may be considered overlapping
     }
   }
 
