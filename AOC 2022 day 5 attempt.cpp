@@ -1,3 +1,5 @@
+// I was able to move the crates for the first eight movements but then after the 8th one it stopped. It worked with the example. 
+
 #include <algorithm>
 #include <fstream>
 #include <iostream>
@@ -31,22 +33,15 @@ vector<string> tokens;
       }else{
      crates[to].push_back(crates[from][crates[from].size()-1]);
       cout<<crates[from][crates[from].size()-1]<<endl;
-       crates[from].pop_back();
+       crates[from].pop_back();// adding the crates to other vectors and deleting it fromt thr original vector it was from (moving the crates from one vector to another)
        }
        } 
-    
-   vector<string> longestVec;
-   for (const auto &innerVec : crates) {
-     if (innerVec.size() > longestVec.size()) {
-       longestVec = innerVec;
-     }
-   }
    for (auto elem : crates) {
      if (elem.size()==0){
        cout<<"";
      }else{
      cout << elem[elem.size()-1];
-       }
+       }// showing the last crate in the columns
    }
  }
   }
